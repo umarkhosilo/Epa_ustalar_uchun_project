@@ -1,0 +1,404 @@
+[
+    {
+        "title": "USHM bolgarka",
+        "img": "assets/Shape.png",
+        "products": [
+            {
+                "img": "pic.png",
+                "title": "EMSH-180-3,1400 BT",
+                "subtitle": "kkkk",
+                "tralling": "1300"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-125,1100 BT",
+                "subtitle": "kkkk",
+                "tralling": "1150"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-115-6,750 BT",
+                "subtitle": "kkkk",
+                "tralling": "900"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-230-8,2600 BT",
+                "subtitle": "kkkk",
+                "tralling": "925"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-180-4,1300 BT",
+                "subtitle": "kkkk",
+                "tralling": "2075"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-115-7,750 BT",
+                "subtitle": "kkkk",
+                "tralling": "1250"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-230-9,2300 BT",
+                "subtitle": "kkkk",
+                "tralling": "900"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSG-125-4,1300 BT",
+                "subtitle": "kkkk",
+                "tralling": "1975"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-125-8,1100 BT",
+                "subtitle": "kkkk",
+                "tralling": "1300"
+            },
+            {
+                "img": "pic.png",
+                "title": "EMSH-125-8,1100 BT",
+                "subtitle": "kkkk",
+                "tralling": "1250"
+            }
+        ]
+    },
+    {
+        "title": "Drel",
+        "img": "assets/drel_icon.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "NU-DM39",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "KDD-M9",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "MFDKE-3K",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Shurupovert",
+        "img": "assets/shrupavert.png",
+        "products": [
+            {
+                "img": "",
+                "title": "EASH-12-5,12B",
+                "subtitle": "kkkk",
+                "tralling": "1250"
+            },
+            {
+                "img": "",
+                "title": "EASH-14.4-5,14,B",
+                "subtitle": "kkkk",
+                "tralling": "1250"
+            },
+            {
+                "img": "",
+                "title": "EASH-18-5,18 B",
+                "subtitle": "kkkk",
+                "tralling": "1250"
+            }
+        ]
+    },
+    {
+        "title": "Perforator",
+        "img": "assets/prefarator.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "NU-DM39",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "KDD-M9",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "MFDKE-3K",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Zarbli bolg’a",
+        "img": "assets/images/drabilka.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "NU-DM39",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "KDD-M9",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "MFDKE-3K",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Frezer",
+        "img": "assets/frezer.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Lobzik",
+        "img": "assets/Lbzik.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Diskli Arra",
+        "img": "assets/DiskliArra.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Plastik quvur payvandlagich",
+        "img": "assets/Plastik quvur payvandlagich.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Kompressor",
+        "img": "assets/Kompressor.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Payvandlash uskunasi",
+        "img": "assets/Payvandlash uskunasi.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Benzopila",
+        "img": "assets/Benzopila.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Moyka",
+        "img": "assets/Moyka.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Qol Asboblari",
+        "img": "assets/Qol Asboblari.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
+        "title": "Aksesuarlar",
+        "img": "assets/Aksesuarlar.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "EASH-12-5,12B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-14.4-5,14,B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "EASH-18-5,18 B",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    }
+]
