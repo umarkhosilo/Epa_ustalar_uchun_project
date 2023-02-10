@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:eppa/Info.dart';
 import 'package:eppa/NavigationBar/ProfilPage.dart';
 import 'package:eppa/Repasitory/katalog/ongroute.dart';
 import 'package:expansion_widget/expansion_widget.dart';
@@ -24,7 +25,7 @@ class _KatalogState extends State<Katalog> with TickerProviderStateMixin {
       Provider.of<EpaProvider>(context, listen: false).getdata();
     });
   }
-
+  List<String> _items = ["a","b","c","d"];
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -81,7 +82,7 @@ class _KatalogState extends State<Katalog> with TickerProviderStateMixin {
                                                         snapshot.data[0].img)),
                                               ),
                                               title: Text(
-                                               " snapshot.data[index].title",
+                                               snapshot.data[index].title,
                                                 style: TextStyle(
                                                     color: Color.lerp(
                                                         Colors.black,
@@ -138,7 +139,7 @@ class _KatalogState extends State<Katalog> with TickerProviderStateMixin {
                                                         shape: BoxShape.circle),
                                                   ),
                                                   title: Text(
-                                                    "snapshot.data[0].option![i]",
+                                                    Info.Products[i],
                                                     style: TextStyle(
                                                       fontSize: 13.sp,
                                                     ),

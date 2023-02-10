@@ -1,11 +1,10 @@
-import 'package:eppa/API/Post/Post.dart';
-import 'package:eppa/API/Room.dart';
-import 'package:eppa/Repasitory/katalog/Katalog.dart';
-import 'package:eppa/Registraciya.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:eppa/NavigationBar/AmaliyotTarihi.dart';
 import 'package:eppa/NavigationBar/ProfilPage.dart';
+import 'package:eppa/Repasitory/katalog/Katalog.dart';
+import 'package:eppa/StartPage.dart';
+import 'package:eppa/pageteat.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:provider/provider.dart';
 
 import 'Repasitory/katalog/epa_provider.dart';
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
         return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Katalog()
+      home: StartPage()
     );
         });
   }

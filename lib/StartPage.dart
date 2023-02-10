@@ -32,7 +32,7 @@ class _StartPageState extends State<StartPage> with TickerProviderStateMixin {
           width: 200,
           height: 44,
           decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage("assets/Vector.png"))),
+              image: DecorationImage(image: AssetImage("assets/images/Vector.png"))),
         )),
       ),
     );

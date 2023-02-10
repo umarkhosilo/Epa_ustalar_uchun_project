@@ -1,7 +1,31 @@
 [
     {
+        "title": "Suv nasoslari",
+        "img": "assets/images/suvnasosi.png",
+        "products": [
+                {
+                    "img": "",
+                    "title": "NU-DM39",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "KDD-M9",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                },
+                {
+                    "img": "",
+                    "title": "MFDKE-3K",
+                    "subtitle": "kkkk",
+                    "tralling": "1250"
+                }
+            ]
+    },
+    {
         "title": "USHM bolgarka",
-        "img": "assets/Shape.png",
+        "img": "assets/images/Shape.png",
         "products": [
             {
                 "img": "pic.png",
@@ -67,7 +91,7 @@
     },
     {
         "title": "Drel",
-        "img": "assets/drel_icon.png",
+        "img": "assets/images/drel_icon.png",
         "products": [
                 {
                     "img": "",
@@ -91,7 +115,7 @@
     },
     {
         "title": "Shurupovert",
-        "img": "assets/shrupavert.png",
+        "img": "assets/images/shrupavert.png",
         "products": [
             {
                 "img": "",
@@ -115,7 +139,7 @@
     },
     {
         "title": "Perforator",
-        "img": "assets/prefarator.png",
+        "img": "assets/images/prefarator.png",
         "products": [
                 {
                     "img": "",
@@ -163,7 +187,7 @@
     },
     {
         "title": "Frezer",
-        "img": "assets/frezer.png",
+        "img": "assets/images/frezer.png",
         "products": [
                 {
                     "img": "",
@@ -187,7 +211,7 @@
     },
     {
         "title": "Lobzik",
-        "img": "assets/Lbzik.png",
+        "img": "assets/images/Lbzik.png",
         "products": [
                 {
                     "img": "",
@@ -211,7 +235,7 @@
     },
     {
         "title": "Diskli Arra",
-        "img": "assets/DiskliArra.png",
+        "img": "assets/images/DiskliArra.png",
         "products": [
                 {
                     "img": "",
@@ -235,7 +259,7 @@
     },
     {
         "title": "Plastik quvur payvandlagich",
-        "img": "assets/Plastik quvur payvandlagich.png",
+        "img": "assets/images/Plastik quvur payvandlagich.png",
         "products": [
                 {
                     "img": "",
@@ -259,7 +283,7 @@
     },
     {
         "title": "Kompressor",
-        "img": "assets/Kompressor.png",
+        "img": "assets/images/Kompressor.png",
         "products": [
                 {
                     "img": "",
@@ -283,7 +307,7 @@
     },
     {
         "title": "Payvandlash uskunasi",
-        "img": "assets/Payvandlash uskunasi.png",
+        "img": "assets/images/Payvandlash uskunasi.png",
         "products": [
                 {
                     "img": "",
@@ -307,7 +331,7 @@
     },
     {
         "title": "Benzopila",
-        "img": "assets/Benzopila.png",
+        "img": "assets/images/Benzopila.png",
         "products": [
                 {
                     "img": "",
@@ -331,7 +355,7 @@
     },
     {
         "title": "Moyka",
-        "img": "assets/Moyka.png",
+        "img": "assets/images/Moyka.png",
         "products": [
                 {
                     "img": "",
@@ -355,7 +379,7 @@
     },
     {
         "title": "Qol Asboblari",
-        "img": "assets/Qol Asboblari.png",
+        "img": "assets/images/Qol Asboblari.png",
         "products": [
                 {
                     "img": "",
@@ -379,7 +403,7 @@
     },
     {
         "title": "Aksesuarlar",
-        "img": "assets/Aksesuarlar.png",
+        "img": "assets/images/Aksesuarlar.png",
         "products": [
                 {
                     "img": "",

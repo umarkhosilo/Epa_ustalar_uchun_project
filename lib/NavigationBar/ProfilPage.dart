@@ -95,7 +95,7 @@ class _ProfilPageState extends State<ProfilPage> {
                         height: 57,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assets/balls.png")))),
+                                image: AssetImage("assets/images/balls.png")))),
                   ],
                 ),
               ),
@@ -121,7 +121,7 @@ class _ProfilPageState extends State<ProfilPage> {
                           height: 26,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assets/icon.png")),
+                                image: AssetImage("assets/images/icon.png")),
                           ),
                         ),
                         SizedBox(
@@ -155,7 +155,7 @@ class _ProfilPageState extends State<ProfilPage> {
                           height: 26,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assets/icon1.png")),
+                                image: AssetImage("assets/images/icon1.png")),
                           ),
                         ),
                         SizedBox(
@@ -189,7 +189,7 @@ class _ProfilPageState extends State<ProfilPage> {
                           height: 26,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assets/icon2.png")),
+                                image: AssetImage("assets/images/icon2.png")),
                           ),
                         ),
                         SizedBox(

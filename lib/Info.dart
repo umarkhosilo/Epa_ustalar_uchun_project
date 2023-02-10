@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class Info {
   static String? ism;
@@ -21,8 +20,8 @@ class Info {
     'assets/katalog/Qolasboblari.png',
     'assets/katalog/Aksesuarlar.png'
   ];
-  static List<String> Products =[
-    "a","b","c","d"
+  static List<String> Products = [
+    "Sirkulyatsion nasoslar","Jet nasoslar","Glubinniy nasoslar","Avtomatik nasoslar"
   ];
   static List<String> produ = [
     "Xiaomi Redmi Note 11\n6/128GB, Graphite Gray\n(Global)",

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'Info.dart';
+import '../Info.dart';
 
 class TapbarPage extends StatefulWidget {
   const TapbarPage({Key? key}) : super(key: key);
@@ -173,7 +173,7 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
                                                 Container(
                                                   child: Image(
                                                       image: AssetImage(
-                                                          "assets/product.png")),
+                                                          "assets/images/product.png")),
                                                   margin: EdgeInsets.symmetric(
                                                     horizontal: 10,
                                                   ),
@@ -216,7 +216,7 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
                                                       Container(
                                                         child: Image(
                                                             image: AssetImage(
-                                                                "assets/icon7.png")),
+                                                                "assets/images/icon7.png")),
                                                       ),
                                                       Text(
                                                         "09-05-2021",
@@ -244,7 +244,7 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
                                                         height: 18,
                                                         child: Image(
                                                             image: AssetImage(
-                                                                "assets/elmakon 1.png")),
+                                                                "assets/images/elmakon 1.png")),
                                                       )
                                                     ]),
                                                   )
@@ -329,7 +329,7 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
                                                 Container(
                                                   child: Image(
                                                       image: AssetImage(
-                                                          "assets/product.png")),
+                                                          "assets/images/product.png")),
                                                   margin: EdgeInsets.symmetric(
                                                     horizontal: 10.h,
                                                   ),
@@ -372,7 +372,7 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
                                                       Container(
                                                         child: Image(
                                                             image: AssetImage(
-                                                                "assets/icon7.png")),
+                                                                "assets/images/icon7.png")),
                                                       ),
                                                       Text(
                                                         "09-05-2021",
@@ -400,7 +400,7 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
                                                         height: 18.h,
                                                         child: Image(
                                                             image: AssetImage(
-                                                                "assets/elmakon 1.png")),
+                                                                "assets/images/elmakon 1.png")),
                                                       )
                                                     ]),
                                                   )

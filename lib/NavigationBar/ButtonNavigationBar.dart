@@ -61,22 +61,22 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
         items: [
           BottomNavigationBarItem(
               icon: Container(
-                child: Image(image: AssetImage("assets/home.png")),
+                child: Image(image: AssetImage("assets/images/home.png")),
               ),
               label: ""),
           BottomNavigationBarItem(
               icon: Container(
-                child: Image(image: AssetImage("assets/add.png")),
+                child: Image(image: AssetImage("assets/images/add.png")),
               ),
               label: ""),
           BottomNavigationBarItem(
               icon: Container(
-                child: Image(image: AssetImage("assets/sup.png")),
+                child: Image(image: AssetImage("assets/images/sup.png")),
               ),
               label: ""),
           BottomNavigationBarItem(
               icon: Container(
-                child: Image(image: AssetImage("assets/katalog.png")),
+                child: Image(image: AssetImage("assets/images/katalog.png")),
               ),
               label: ""),
         ],
