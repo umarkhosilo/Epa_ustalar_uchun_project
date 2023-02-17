@@ -1,7 +1,5 @@
 import 'package:eppa/Boglanish.dart';
-import 'package:eppa/NavigationBar/ProfilPage.dart';
-import 'package:eppa/class.dart';
-import 'package:flutter/material.dart';
+import 'libruaryclass.dart';
 
 class UserRaqamHaPage extends StatefulWidget {
   const UserRaqamHaPage({Key? key}) : super(key: key);

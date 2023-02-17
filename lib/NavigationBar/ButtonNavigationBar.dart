@@ -2,6 +2,7 @@ import 'package:eppa/NavigationBar/AmaliyotTarihi.dart';
 import 'package:eppa/Repasitory/katalog/Katalog.dart';
 import 'package:eppa/NavigationBar/ProfilPage.dart';
 import 'package:eppa/NavigationBar/XaridQoshish.dart';
+import 'package:eppa/libruaryclass.dart';
 import 'package:flutter/material.dart';
 
 class ButtonNavigationBar extends StatefulWidget {
@@ -54,8 +55,8 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
         type: BottomNavigationBarType.fixed,
         currentIndex: widget.index,
         elevation: 10,
-        selectedFontSize: 30,
-        iconSize: 30,
+        selectedFontSize: 30.sp,
+        iconSize: 30.sp,
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.grey,
         items: [

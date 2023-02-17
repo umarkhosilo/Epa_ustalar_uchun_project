@@ -1,3 +1,4 @@
+import 'package:eppa/libruaryclass.dart';
 import 'package:flutter/material.dart';
 
 class XariQoshishPage extends StatefulWidget {
@@ -27,9 +28,9 @@ class _XariQoshishPageState extends State<XariQoshishPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("Yangi xarid",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800)),
+                style: TextStyle(fontSize: 25.sp, fontWeight: FontWeight.w800)),
             SizedBox(
-              height: 32,
+              height: 32.h,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,11 +41,11 @@ class _XariQoshishPageState extends State<XariQoshishPage> {
                   style: TextStyle(color: Colors.black),
                 )),
                 SizedBox(
-                  height: 5,
+                  height: 5.h,
                 ),
                 Container(
-                  width: 358,
-                  height: 60,
+                  width: 358.w,
+                  height: 60.h,
                   child: TextFormField(
                     cursorColor: Colors.black,
                     cursorWidth: 1,
@@ -65,9 +66,9 @@ class _XariQoshishPageState extends State<XariQoshishPage> {
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(8),
                           borderSide:
-                              BorderSide(color: Colors.green, width: 3)),
+                              BorderSide(color: Colors.green, width: 3.w)),
                       enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.grey, width: 2)),
+                          borderSide: BorderSide(color: Colors.grey, width: 2.w)),
                       border: InputBorder.none,
                     ),
                   ),
@@ -75,17 +76,17 @@ class _XariQoshishPageState extends State<XariQoshishPage> {
               ],
             ),
             SizedBox(
-              height: 16,
+              height: 16.h,
             ),
             Container(
-                width: 358,
-                height: 60,
+                width: 358.w,
+                height: 60.h,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(primary: _color),
                     onPressed: () {},
                     child: Text(
                       "Qosh'ish",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: TextStyle(color: Colors.white, fontSize: 20.sp),
                     )))
           ],
         ),

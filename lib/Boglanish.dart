@@ -1,6 +1,4 @@
-import 'package:eppa/StartPage2.dart';
-import 'package:eppa/UserRaqamPage.dart';
-import 'package:flutter/material.dart';
+import 'libruaryclass.dart';
 
 class BoglanishPage extends StatefulWidget {
   const BoglanishPage({Key? key}) : super(key: key);

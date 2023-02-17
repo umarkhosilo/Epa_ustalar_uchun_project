@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../Info.dart';
+import '../classlar/Info.dart';
 
 class TapbarPage extends StatefulWidget {
   const TapbarPage({Key? key}) : super(key: key);
@@ -23,11 +23,7 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-        designSize: const Size(360, 690),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (context, child) {
+   
           return Scaffold(
             backgroundColor: Color.fromARGB(255, 240, 233, 233),
             body: SingleChildScrollView(
@@ -461,6 +457,6 @@ class _TapbarPageState extends State<TapbarPage> with TickerProviderStateMixin {
               ]),
             ),
           );
-        });
+        
   }
 }

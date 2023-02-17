@@ -1,8 +1,4 @@
-import 'package:eppa/UserRaqamPage.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:eppa/Registraciya.dart';
-import 'package:eppa/class.dart';
-import 'package:flutter/material.dart';
+import 'libruaryclass.dart';
 
 class StartPage2 extends StatefulWidget {
   const StartPage2({Key? key}) : super(key: key);
@@ -21,11 +17,7 @@ class _StartPage2State extends State<StartPage2> {
   String _e = "";
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-        designSize: const Size(360, 690),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (context, child) {
+   
           return Scaffold(
             backgroundColor: Color.fromARGB(255, 233, 230, 230),
             body: SingleChildScrollView(
@@ -123,6 +115,5 @@ class _StartPage2State extends State<StartPage2> {
               ),
             ),
           );
-        });
   }
 }

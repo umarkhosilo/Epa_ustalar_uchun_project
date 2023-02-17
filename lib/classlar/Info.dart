@@ -1,4 +1,3 @@
-
 class Info {
   static String? ism;
   static String? familiya;

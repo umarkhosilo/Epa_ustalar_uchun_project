@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-
+import 'libruaryclass.dart';
 class AmaliyotTarihi1 extends StatefulWidget {
 
   @override

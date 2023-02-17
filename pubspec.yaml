@@ -39,6 +39,7 @@ dependencies:
   provider: ^6.0.5
   expansion_widget: ^0.0.3
   get: ^4.6.5
+  dropdown_button2: ^1.4.0
 
 dev_dependencies:
   flutter_test:
@@ -64,7 +65,7 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/json/epa.json
+    - assets/json/
   #   - images/a_dot_ham.jpeg
  
 

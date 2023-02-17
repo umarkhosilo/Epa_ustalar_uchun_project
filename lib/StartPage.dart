@@ -1,5 +1,4 @@
-import 'package:eppa/StartPage2.dart';
-import 'package:flutter/material.dart';
+import 'libruaryclass.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({Key? key}) : super(key: key);

@@ -1,7 +1,6 @@
 import 'package:eppa/Boglanish.dart';
 import 'package:eppa/NavigationBar/ButtonNavigationBar.dart';
-import 'package:eppa/class.dart';
-import 'package:flutter/material.dart';
+import 'package:eppa/libruaryclass.dart';
 
 class ProfilPage extends StatefulWidget {
   const ProfilPage({Key? key}) : super(key: key);
@@ -26,21 +25,21 @@ class _ProfilPageState extends State<ProfilPage> {
             children: [
               Text(
                 usernames.name,
-                style: TextStyle(color: Colors.grey, fontSize: 14),
+                style: TextStyle(color: Colors.grey, fontSize: 14.sp),
               ),
               SizedBox(
-                width: 5,
+                width: 5.w,
               ),
               Text(
                 usernames.username,
-                style: TextStyle(color: Colors.grey, fontSize: 14),
+                style: TextStyle(color: Colors.grey, fontSize: 14.sp),
               ),
             ],
           ),
         ),
         actions: [
           SizedBox(
-            height: 5,
+            height: 5.h,
           ),
           Column(
             children: [
@@ -60,17 +59,17 @@ class _ProfilPageState extends State<ProfilPage> {
       body: SingleChildScrollView(
         child: Container(
           width: double.infinity,
-          height: 690,
+          height: 690.h,
           color: Color.fromARGB(255, 245, 241, 241),
           alignment: Alignment.center,
           child: Column(
             children: [
               SizedBox(
-                height: 64,
+                height: 64.h,
               ),
               Container(
-                width: 328,
-                height: 181,
+                width: 328.w,
+                height: 181.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.white,
@@ -78,7 +77,7 @@ class _ProfilPageState extends State<ProfilPage> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 32,
+                      height: 32.h,
                     ),
                     Text(
                       "Mening ballarim",
@@ -88,11 +87,11 @@ class _ProfilPageState extends State<ProfilPage> {
                           fontSize: 24),
                     ),
                     SizedBox(
-                      height: 16,
+                      height: 16.h,
                     ),
                     Container(
-                        width: 167,
-                        height: 57,
+                        width: 167.w,
+                        height: 57.h,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assets/images/balls.png")))),
@@ -100,11 +99,11 @@ class _ProfilPageState extends State<ProfilPage> {
                 ),
               ),
               SizedBox(
-                height: 48,
+                height: 48.h,
               ),
               Container(
-                width: 328,
-                height: 58,
+                width: 328.w,
+                height: 58.h,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(primary: Colors.red),
                     onPressed: () {
@@ -117,15 +116,15 @@ class _ProfilPageState extends State<ProfilPage> {
                       children: [
                         Padding(padding: EdgeInsets.symmetric(horizontal: 30)),
                         Container(
-                          width: 26,
-                          height: 26,
+                          width: 26.w,
+                          height: 26.h,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assets/images/icon.png")),
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 10.w,
                         ),
                         Text(
                           "Xarid Koshish",
@@ -134,11 +133,11 @@ class _ProfilPageState extends State<ProfilPage> {
                     )),
               ),
               SizedBox(
-                height: 16,
+                height: 16.h,
               ),
               Container(
-                width: 328,
-                height: 58,
+                width: 328.w,
+                height: 58.h,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(primary: Colors.red),
                     onPressed: () {
@@ -149,17 +148,17 @@ class _ProfilPageState extends State<ProfilPage> {
                     },
                     child: Row(
                       children: [
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 30)),
+                        Padding(padding: EdgeInsets.symmetric(horizontal: 30.w)),
                         Container(
-                          width: 26,
-                          height: 26,
+                          width: 26.w,
+                          height: 26.h,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assets/images/icon1.png")),
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 10.w,
                         ),
                         Text(
                           "Amaliyotlar tarixi",
@@ -168,11 +167,11 @@ class _ProfilPageState extends State<ProfilPage> {
                     )),
               ),
               SizedBox(
-                height: 16,
+                height: 16.h,
               ),
               Container(
-                width: 328,
-                height: 58,
+                width: 328.w,
+                height: 58.h,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(primary: Colors.red),
                     onPressed: () {
@@ -183,17 +182,17 @@ class _ProfilPageState extends State<ProfilPage> {
                     },
                     child: Row(
                       children: [
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 30)),
+                        Padding(padding: EdgeInsets.symmetric(horizontal: 30.w)),
                         Container(
-                          width: 26,
-                          height: 26,
+                          width: 26.w,
+                          height: 26.h,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assets/images/icon2.png")),
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 10.w,
                         ),
                         Text(
                           "Katalog",
@@ -202,11 +201,11 @@ class _ProfilPageState extends State<ProfilPage> {
                     )),
               ),
               SizedBox(
-                height: 80,
+                height: 80.h,
               ),
               Container(
-                  width: 328,
-                  height: 58,
+                  width: 328.w,
+                  height: 58.h,
                   child: ElevatedButton(
                       style: ElevatedButton.styleFrom(primary: Colors.red),
                       onPressed: () {

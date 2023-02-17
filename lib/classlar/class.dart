@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 class usernames{
 static String name = "ism";
 static String username = "Familiya";

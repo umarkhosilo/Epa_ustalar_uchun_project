@@ -1,6 +1,4 @@
-import 'package:eppa/Repasitory/katalog/epa_model.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:eppa/libruaryclass.dart';
 
 class OngRoutePage extends StatefulWidget {
 KatalogModel data;
@@ -16,11 +14,7 @@ class _OngRoutePageState extends State<OngRoutePage> {
   String? values;
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-        designSize: const Size(360, 690),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (context, child) {
+   
           return Scaffold(
             backgroundColor: Color.fromARGB(255, 240, 233, 233),
             appBar: AppBar(
@@ -45,7 +39,7 @@ class _OngRoutePageState extends State<OngRoutePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: 30,
+                      height: 30.w,
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 10.w),
@@ -123,6 +117,6 @@ class _OngRoutePageState extends State<OngRoutePage> {
                   ]),
             ),
           );
-        });
+      
   }
 }

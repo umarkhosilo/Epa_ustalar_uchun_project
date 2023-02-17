@@ -1,7 +1,5 @@
 import 'package:eppa/Boglanish.dart';
-import 'package:eppa/UserRaqamPage.dart';
-import 'package:eppa/class.dart';
-import 'package:flutter/material.dart';
+import 'libruaryclass.dart';
 
 class UserRaqamYpkPage extends StatefulWidget {
   const UserRaqamYpkPage({Key? key}) : super(key: key);
@@ -31,25 +29,25 @@ class _UserRaqamYpkPageState extends State<UserRaqamYpkPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 40,),
+              SizedBox(height: 40.w,),
               Text(
                 "Telefon raqamingizni",
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 23,
+                    fontSize: 23.sp,
                     fontWeight: FontWeight.w700),
               ),
               Text(
                 "kiriting",
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 23,
+                    fontSize: 23.sp,
                     fontWeight: FontWeight.w700),
               ),
-              SizedBox(height: 27),
+              SizedBox(height: 27.w),
               Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  margin: EdgeInsets.symmetric(horizontal: 28),
+                  padding: EdgeInsets.symmetric(horizontal: 20.w),
+                  margin: EdgeInsets.symmetric(horizontal: 28.w),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(

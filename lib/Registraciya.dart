@@ -1,8 +1,5 @@
-import 'package:eppa/StartPage2.dart';
-import 'package:eppa/UserRaqamPage.dart';
-import 'package:eppa/class.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'libruaryclass.dart';
+
 
 class Registraciya extends StatefulWidget {
   const Registraciya({Key? key}) : super(key: key);
@@ -57,11 +54,6 @@ TextEditingController tugilgansanacontrol = TextEditingController();
 class _RegistraciyaState extends State<Registraciya> {
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-        designSize: const Size(360, 690),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (context, child) {
           return Scaffold(
               body: SingleChildScrollView(
             child: Container(
@@ -489,6 +481,5 @@ class _RegistraciyaState extends State<Registraciya> {
               ]),
             ),
           ));
-        });
   }
 }

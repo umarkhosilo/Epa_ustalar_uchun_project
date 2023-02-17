@@ -1,8 +1,4 @@
-import 'package:eppa/StartPage2.dart';
-import 'package:eppa/UserRaqamHa.dart';
-import 'package:eppa/UserRaqamYok.dart';
-import 'package:eppa/class.dart';
-import 'package:flutter/material.dart';
+import 'libruaryclass.dart';
 
 class UserRaqamPage extends StatefulWidget {
   const UserRaqamPage({Key? key}) : super(key: key);
