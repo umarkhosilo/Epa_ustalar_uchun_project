@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return MaterialApp(
-              debugShowCheckedModeBanner: false, home: const AnimationPage());
+              debugShowCheckedModeBanner: false, home: const ProfilPage(),);
         });
   }
 }

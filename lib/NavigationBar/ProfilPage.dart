@@ -10,31 +10,43 @@ class ProfilPage extends StatefulWidget {
 }
 
 class _ProfilPageState extends State<ProfilPage> {
+  bool _fromTop = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 245, 241, 241),
         elevation: 0,
-        leading: Icon(
-          Icons.person_outlined,
-          color: Colors.black,
+        leading: Container(
+          width: 20.w,
+          height: 20.h,
+          child: Icon(
+            Icons.person_outline,
+            color: Colors.grey,
+          ),
         ),
-        title: Container(
-          child: Row(
-            children: [
-              Text(
-                usernames.name,
-                style: TextStyle(color: Colors.grey, fontSize: 14.sp),
-              ),
-              SizedBox(
-                width: 5.w,
-              ),
-              Text(
-                usernames.username,
-                style: TextStyle(color: Colors.grey, fontSize: 14.sp),
-              ),
-            ],
+        title: InkWell(
+          onTap: () {
+            openProfil();
+          },
+          child: Container(
+            child: Row(
+              children: [
+                Container(
+                  child: Text(
+                    usernames.name,
+                    style: TextStyle(color: Colors.grey, fontSize: 14.sp),
+                  ),
+                ),
+                SizedBox(
+                  width: 5.w,
+                ),
+                Text(
+                  usernames.username,
+                  style: TextStyle(color: Colors.grey, fontSize: 14.sp),
+                ),
+              ],
+            ),
           ),
         ),
         actions: [
@@ -57,9 +69,9 @@ class _ProfilPageState extends State<ProfilPage> {
         ],
       ),
       body: SingleChildScrollView(
+        
         child: Container(
           width: double.infinity,
-          height: 690.h,
           color: Color.fromARGB(255, 245, 241, 241),
           alignment: Alignment.center,
           child: Column(
@@ -148,7 +160,8 @@ class _ProfilPageState extends State<ProfilPage> {
                     },
                     child: Row(
                       children: [
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 30.w)),
+                        Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 30.w)),
                         Container(
                           width: 26.w,
                           height: 26.h,
@@ -182,7 +195,8 @@ class _ProfilPageState extends State<ProfilPage> {
                     },
                     child: Row(
                       children: [
-                        Padding(padding: EdgeInsets.symmetric(horizontal: 30.w)),
+                        Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 30.w)),
                         Container(
                           width: 26.w,
                           height: 26.h,
@@ -201,7 +215,7 @@ class _ProfilPageState extends State<ProfilPage> {
                     )),
               ),
               SizedBox(
-                height: 80.h,
+                height: 50.h,
               ),
               Container(
                   width: 328.w,
@@ -214,11 +228,142 @@ class _ProfilPageState extends State<ProfilPage> {
                             MaterialPageRoute(
                                 builder: (context) => BoglanishPage()));
                       },
-                      child: Text("Biz bilan bog’lanish")))
+                      child: Text("Biz bilan bog’lanish"))),
+                      SizedBox(height: 20.h,)
             ],
           ),
         ),
       ),
+    );
+  }
+
+  openProfil() {
+    showGeneralDialog(
+      barrierLabel: "nsntshg",
+      barrierDismissible: true,
+      barrierColor: Colors.black45.withOpacity(.8),
+      transitionDuration: Duration(milliseconds: 700),
+      context: context,
+      pageBuilder: (context, anim1, anim2) {
+        // StatefulBuilder() - diologni ichida state bo'lishi uchun.
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return Align(
+                alignment:
+                    _fromTop ? Alignment.topCenter : Alignment.bottomCenter,
+                child: SafeArea(
+                    child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.vertical(
+                                bottom: Radius.circular(6))),
+                        height: 180.h,
+                        width: 320.w,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.symmetric(horizontal: 20.w),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    height: 50.h,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Container(
+                                          width: 120.w,
+                                          child: Text(usernames.name,
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 14.sp,
+                                                  fontWeight:
+                                                      FontWeight.w900))),
+                                      Container(
+                                        child: Text(usernames.userkarta,
+                                            style: TextStyle(
+                                                color: Colors.grey,
+                                                fontSize: 14.sp,
+                                                fontWeight: FontWeight.w900)),
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Container(
+                                        width: 120.w,
+                                        child: Text(usernames.username,
+                                            style: TextStyle(
+                                                color: Colors.grey,
+                                                fontSize: 14.sp,
+                                                fontWeight: FontWeight.w900)),
+                                      ),
+                                      Container(
+                                        child: Column(
+                                          children: [
+                                            Container(
+                                                child: Text(usernames.userfoune,
+                                                    style: TextStyle(
+                                                        color: Colors.grey,
+                                                        fontSize: 14.sp,
+                                                        fontWeight:
+                                                            FontWeight.w900))),
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  Divider(
+                                    height: 2.h,
+                                    color: Colors.grey,
+                                  ),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  Container(
+                                    alignment: Alignment.centerRight,
+                                    child: TextButton(
+                                      onPressed: (){
+                                         Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  StartPage2()));
+                                      },
+                                      child: Text("Chiqish",
+                                          style: TextStyle(
+                                              color: Colors.grey,
+                                              fontSize: 14.sp,
+                                              fontWeight: FontWeight.w900)),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ))));
+          },
+        );
+      },
+      transitionBuilder: (context, anim1, anim2, child) {
+        return SlideTransition(
+          position:
+              Tween(begin: Offset(0, _fromTop ? -1 : 1), end: Offset(0, 0))
+                  .animate(anim1),
+          child: child,
+        );
+      },
     );
   }
 }
