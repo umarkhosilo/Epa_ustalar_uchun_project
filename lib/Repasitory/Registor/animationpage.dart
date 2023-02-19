@@ -30,6 +30,11 @@ class _AnimationPageState extends State<AnimationPage> {
               ),
             );
           }
+
+
+
+
+          
           return DropdownButtonFormField2<RegionModel>(
             dropdownMaxHeight: 300.h,
             hint: Text("Tanlash"),

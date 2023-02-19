@@ -14,7 +14,6 @@ class _OngRoutePageState extends State<OngRoutePage> {
   String? values;
   @override
   Widget build(BuildContext context) {
-   
           return Scaffold(
             backgroundColor: Color.fromARGB(255, 240, 233, 233),
             appBar: AppBar(
@@ -28,7 +27,7 @@ class _OngRoutePageState extends State<OngRoutePage> {
               title: Text(
                 "Ortga",
                 style: TextStyle(
-                    color: Colors.black,
+                    color: Color.fromRGBO(51,51,51,1),
                     fontSize: 25.sp,
                     fontWeight: FontWeight.w700),
               ),
@@ -46,6 +45,7 @@ class _OngRoutePageState extends State<OngRoutePage> {
                       child: Text(
                         widget.data.title!,
                         style: TextStyle(
+                          color: Color.fromARGB(255, 71, 68, 68),
                             fontSize: 25.sp, fontWeight: FontWeight.w700),
                       ),
                     ),
@@ -58,6 +58,7 @@ class _OngRoutePageState extends State<OngRoutePage> {
                               return Column(
                                 children: [
                                   Container(
+                                    
                                       decoration: BoxDecoration(
                                           color: Color.fromARGB(
                                               255, 240, 233, 233),
@@ -67,15 +68,16 @@ class _OngRoutePageState extends State<OngRoutePage> {
                                         leading: Column(
                                           children: [
                                             Container(
-                                              // decoration: BoxDecoration(
-                                              //     image: DecorationImage(
-                                              //         image: AssetImage(
-                                              //             widget.products[index].img)),
-                                              //     color: Color.fromARGB(52, 255, 255, 255),
-                                              //     borderRadius:
-                                              //         BorderRadius.circular(6)),
-                                              width: 47.w,
-                                              height: 47.h,
+                                              
+                                               decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                   image: DecorationImage(
+                                                      image: AssetImage(
+                                                           widget.data.products![index].img!)),
+                                                  borderRadius:
+                                                      BorderRadius.circular(6)),
+                                              width: 50.w,
+                                              height: 50.h,
                                             ),
                                           ],
                                         ),
@@ -96,6 +98,7 @@ class _OngRoutePageState extends State<OngRoutePage> {
                                           child: Text(
                                             widget.data.products![index].title!,
                                             style: TextStyle(
+                                              color: Color.fromARGB(255, 71, 68, 68),
                                                 fontWeight: FontWeight.w800),
                                           ),
                                         ),

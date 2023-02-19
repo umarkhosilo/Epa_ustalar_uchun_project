@@ -1,8 +1,7 @@
-import 'package:eppa/API/RoomService.dart';
 import 'package:flutter/material.dart';
-import 'package:http/retry.dart';
 
 import 'RoomModel.dart';
+import 'RoomService.dart';
 
 class RoomPage extends StatefulWidget {
   const RoomPage({Key? key}) : super(key: key);
@@ -43,7 +42,8 @@ class _RoomPageState extends State<RoomPage> {
                           ),
                         ),
                         trailing: Text(snapshot.data![index].id!.toString()),
-                        subtitle: Text(snapshot.data![index].nameRu!.toString()),
+                        subtitle:
+                            Text(snapshot.data![index].nameRu!.toString()),
                       );
                     }),
               );

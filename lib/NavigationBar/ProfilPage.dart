@@ -18,12 +18,9 @@ class _ProfilPageState extends State<ProfilPage> {
         backgroundColor: Color.fromARGB(255, 245, 241, 241),
         elevation: 0,
         leading: Container(
-          width: 20.w,
-          height: 20.h,
-          child: Icon(
-            Icons.person_outline,
-            color: Colors.grey,
-          ),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/images/profilicon.png"))),
         ),
         title: InkWell(
           onTap: () {
@@ -35,7 +32,9 @@ class _ProfilPageState extends State<ProfilPage> {
                 Container(
                   child: Text(
                     usernames.name,
-                    style: TextStyle(color: Colors.grey, fontSize: 14.sp),
+                    style: TextStyle(
+                        color: Color.fromRGBO(130, 130, 130, 1),
+                        fontSize: 14.sp),
                   ),
                 ),
                 SizedBox(
@@ -43,7 +42,8 @@ class _ProfilPageState extends State<ProfilPage> {
                 ),
                 Text(
                   usernames.username,
-                  style: TextStyle(color: Colors.grey, fontSize: 14.sp),
+                  style: TextStyle(
+                      color: Color.fromRGBO(130, 130, 130, 1), fontSize: 14.sp),
                 ),
               ],
             ),
@@ -62,14 +62,15 @@ class _ProfilPageState extends State<ProfilPage> {
               ),
               Text(
                 usernames.userfoune,
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(
+                  color: Color.fromRGBO(130, 130, 130, 1),
+                ),
               )
             ],
           )
         ],
       ),
       body: SingleChildScrollView(
-        
         child: Container(
           width: double.infinity,
           color: Color.fromARGB(255, 245, 241, 241),
@@ -229,7 +230,9 @@ class _ProfilPageState extends State<ProfilPage> {
                                 builder: (context) => BoglanishPage()));
                       },
                       child: Text("Biz bilan bog’lanish"))),
-                      SizedBox(height: 20.h,)
+              SizedBox(
+                height: 20.h,
+              )
             ],
           ),
         ),
@@ -278,14 +281,19 @@ class _ProfilPageState extends State<ProfilPage> {
                                           width: 120.w,
                                           child: Text(usernames.name,
                                               style: TextStyle(
-                                                  color: Colors.grey,
+                                                  decoration:
+                                                      TextDecoration.none,
+                                                  color: Color.fromRGBO(
+                                                      130, 130, 130, 1),
                                                   fontSize: 14.sp,
                                                   fontWeight:
                                                       FontWeight.w900))),
                                       Container(
                                         child: Text(usernames.userkarta,
                                             style: TextStyle(
-                                                color: Colors.grey,
+                                                decoration: TextDecoration.none,
+                                                color: Color.fromRGBO(
+                                                    51, 51, 51, 1),
                                                 fontSize: 14.sp,
                                                 fontWeight: FontWeight.w900)),
                                       )
@@ -302,7 +310,9 @@ class _ProfilPageState extends State<ProfilPage> {
                                         width: 120.w,
                                         child: Text(usernames.username,
                                             style: TextStyle(
-                                                color: Colors.grey,
+                                                decoration: TextDecoration.none,
+                                                color: Color.fromRGBO(
+                                                    130, 130, 130, 1),
                                                 fontSize: 14.sp,
                                                 fontWeight: FontWeight.w900)),
                                       ),
@@ -312,7 +322,10 @@ class _ProfilPageState extends State<ProfilPage> {
                                             Container(
                                                 child: Text(usernames.userfoune,
                                                     style: TextStyle(
-                                                        color: Colors.grey,
+                                                        decoration:
+                                                            TextDecoration.none,
+                                                        color: Color.fromRGBO(
+                                                            130, 130, 130, 1),
                                                         fontSize: 14.sp,
                                                         fontWeight:
                                                             FontWeight.w900))),
@@ -332,20 +345,35 @@ class _ProfilPageState extends State<ProfilPage> {
                                     height: 10.h,
                                   ),
                                   Container(
-                                    alignment: Alignment.centerRight,
-                                    child: TextButton(
-                                      onPressed: (){
-                                         Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  StartPage2()));
-                                      },
-                                      child: Text("Chiqish",
-                                          style: TextStyle(
-                                              color: Colors.grey,
-                                              fontSize: 14.sp,
-                                              fontWeight: FontWeight.w900)),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        Container(
+                                          width: 20,
+                                          height: 20,
+                                          decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      "assets/images/Chiqish.png"))),
+                                        ),
+                                        TextButton(
+                                          onPressed: () {
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        StartPage2()));
+                                          },
+                                          child: Text("Chiqish",
+                                              style: TextStyle(
+                                                  decoration:
+                                                      TextDecoration.none,
+                                                  color: Color.fromRGBO(
+                                                      51, 51, 51, 1),
+                                                  fontSize: 14.sp,
+                                                  fontWeight: FontWeight.w900)),
+                                        ),
+                                      ],
                                     ),
                                   )
                                 ],

@@ -64,7 +64,9 @@ class _KatalogState extends State<Katalog> with TickerProviderStateMixin {
                                             leading: Container(
                                               child: Image(
                                                   image: AssetImage(
-                                                      snapshot.data[0].img)),
+                                                      snapshot.data[0].img,), color: Color.lerp(Color.fromRGBO(79,79,79,1),
+                                                      Colors.white,
+                                                      easeInValue),),
                                             ),
                                             title: Text(
                                               snapshot.data[index].title,
@@ -114,18 +116,21 @@ class _KatalogState extends State<Katalog> with TickerProviderStateMixin {
                                                         builder: (context) =>
                                                             ProfilPage()));
                                               },
-                                              child: ListTile(
-                                                leading: Container(
-                                                  width: 15.w,
-                                                  height: 15.h,
-                                                  decoration: BoxDecoration(
-                                                      color: Colors.grey,
-                                                      shape: BoxShape.circle),
-                                                ),
-                                                title: Text(
-                                                  Info.Products[i],
-                                                  style: TextStyle(
-                                                    fontSize: 13.sp,
+                                              child: Container(
+                                                height: 40.h,
+                                                child: ListTile(
+                                                  leading: Container(
+                                                    width: 15.w,
+                                                    height: 15.h,
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.grey,
+                                                        shape: BoxShape.circle),
+                                                  ),
+                                                  title: Text(
+                                                    Info.Products[i],
+                                                    style: TextStyle(
+                                                      fontSize: 13.sp,
+                                                    ),
                                                   ),
                                                 ),
                                               ),
