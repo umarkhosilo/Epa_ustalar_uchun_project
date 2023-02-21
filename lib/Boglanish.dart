@@ -53,11 +53,11 @@ class _BoglanishPageState extends State<BoglanishPage>
               height: 120,
             ),
             Container(
-              width: 76,
-              height: 76,
+              width: 120.w,
+              height: 120.h,
               decoration: BoxDecoration(
                   image:
-                      DecorationImage(image: AssetImage("assets/ptichka.png"))),
+                      DecorationImage(image: AssetImage("assets/images/ptichka.png"))),
             ),
             SizedBox(
               height: 260,

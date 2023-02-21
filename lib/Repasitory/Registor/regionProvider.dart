@@ -10,7 +10,7 @@ class RegionProvider extends ChangeNotifier {
   Future<void> getdata() async {
     set(true);
     data = await RegionService().regionservice();
-    print(data);
+    print(data.length);
     set(false);
   }
 }

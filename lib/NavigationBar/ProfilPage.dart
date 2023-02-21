@@ -221,15 +221,23 @@ class _ProfilPageState extends State<ProfilPage> {
               Container(
                   width: 328.w,
                   height: 58.h,
+                  decoration: BoxDecoration(
+                  ),
                   child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(primary: Colors.red),
+                      style: ElevatedButton.styleFrom(
+                         side: BorderSide(
+                         width: 3.0.w,
+                        color: Colors.red,
+                         ),
+                         primary: Color.fromARGB(255, 245, 241, 241),
+                        ),
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => BoglanishPage()));
                       },
-                      child: Text("Biz bilan bog’lanish"))),
+                      child: Text("Biz bilan bog’lanish",style: TextStyle(color: Color.fromRGBO(51,51,51,1),),))),
               SizedBox(
                 height: 20.h,
               )
