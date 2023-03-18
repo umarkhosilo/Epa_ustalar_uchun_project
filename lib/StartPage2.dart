@@ -19,7 +19,7 @@ class _StartPage2State extends State<StartPage2> {
   Widget build(BuildContext context) {
    
           return Scaffold(
-            backgroundColor: Color.fromARGB(255, 233, 230, 230),
+            backgroundColor: Color.fromRGBO(229, 229, 229,1),
             body: SingleChildScrollView(
               
               child: Container(
@@ -52,12 +52,14 @@ class _StartPage2State extends State<StartPage2> {
                     height: 5.h,
                   ),
                   Container(
+                    width: 328.w,
+                    height: 56.h,
                       margin: EdgeInsets.symmetric(horizontal: 16),
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5.r),
-                          border: Border.all(width: 1.w, color: Colors.grey)),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(width: 1.w, color: Color.fromRGBO(189, 189, 189,1))),
                       child: TextFormField(
                         onChanged: (e){
                           _e = e;

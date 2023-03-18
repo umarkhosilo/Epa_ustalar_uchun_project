@@ -41,11 +41,13 @@ class _UserRaqamHaPageState extends State<UserRaqamHaPage> {
                 height: 32,
               ),
               Container(
+                width: 328.w,
+                height: 56,
                   margin: EdgeInsets.symmetric(horizontal: 16),
                   padding: EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(10),
                       border: Border.all(width: 1, color: Colors.grey)),
                   child: TextFormField(
                     onChanged: (e){

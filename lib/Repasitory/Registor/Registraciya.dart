@@ -1,4 +1,4 @@
-import 'libruaryclass.dart';
+import '../../libruaryclass.dart';
 
 class Registraciya extends StatefulWidget {
   const Registraciya({Key? key}) : super(key: key);
@@ -7,52 +7,61 @@ class Registraciya extends StatefulWidget {
   State<Registraciya> createState() => _RegistraciyaState();
 }
 
-Color qoshimchatelcolor = Colors.grey;
-Color namecolor = Colors.grey;
-Color usernamecolor = Colors.grey;
-Color otangizniismiColor = Colors.grey;
-Color logincolor = Colors.grey;
-Color tugilgansanacolor = Colors.grey;
-Color usertelcolor = Colors.grey;
-bool nameOnclick = false;
-bool loginOnclick = false;
-bool otangizniismiOnclik = false;
-bool usernameOnclick = false;
-bool tugilgansanaOnclick = false;
-bool userraqamonclick = false;
-bool usertelonclick = false;
-String _JamoIsh = "false";
-bool _jamoishenabled = false;
-List<String> listIsh = ["Santexnik", "Sotuvchi", "Elektrik","Santexnik","Mexanik"];
-List<String> listTuman = [
-  "Olmazor",
-  "QoraQamich",
-  "  Yunsabod",
-  "Chilonzor",
-  ""
-];
-List<String> listViloyat = [
-  "Toshkent",
-  "Samarkand",
-  "Buharo",
-  "Horazim",
-  "Hiva",
-  "Qoraqalpokiston",
-];
-String Tumantitle = "Tuman";
-String _ishTanlash = "T'anlash";
-String ViloyatTitle = "Viloyat";
-
-TextEditingController qoshimchatelcontrol = TextEditingController();
-TextEditingController usertelcontrol = TextEditingController();
-TextEditingController namecontrol = TextEditingController();
-TextEditingController usernamecontrol = TextEditingController();
-TextEditingController otangizniismicontrol = TextEditingController();
-TextEditingController logincontrol = TextEditingController();
-TextEditingController tugilgansanacontrol = TextEditingController();
-
 class _RegistraciyaState extends State<Registraciya> {
+  Color qoshimchatelcolor = Color.fromRGBO(189, 189, 189, 1);
+  Color namecolor = Color.fromRGBO(189, 189, 189, 1);
+  Color usernamecolor = Color.fromRGBO(189, 189, 189, 1);
+  Color otangizniismiColor = Color.fromRGBO(189, 189, 189, 1);
+  Color logincolor = Color.fromRGBO(189, 189, 189, 1);
+  Color tugilgansanacolor = Color.fromRGBO(189, 189, 189, 1);
+  Color usertelcolor = Color.fromRGBO(189, 189, 189, 1);
+  bool nameOnclick = false;
+  bool loginOnclick = false;
+  bool otangizniismiOnclik = false;
+  bool usernameOnclick = false;
+  bool tugilgansanaOnclick = false;
+  bool userraqamonclick = false;
+  bool usertelonclick = false;
+  String _JamoIsh = "false";
+  bool _jamoishenabled = false;
+  List<String> listIsh = [
+    "Santexnik",
+    "Sotuvchi",
+    "Elektrik",
+    "Santexnik",
+    "Mexanik"
+  ];
+  List<String> listTuman = [
+    "Olmazor",
+    "QoraQamich",
+    "  Yunsabod",
+    "Chilonzor",
+    ""
+  ];
+  List<String> listViloyat = [
+    "Toshkent",
+    "Samarkand",
+    "Buharo",
+    "Horazim",
+    "Hiva",
+    "Qoraqalpokiston",
+  ];
+  String Tumantitle = "Tuman";
+  String _ishTanlash = "T'anlash";
+  String ViloyatTitle = "Viloyat";
+
+  TextEditingController qoshimchatelcontrol = TextEditingController();
+  TextEditingController usertelcontrol = TextEditingController();
+  TextEditingController namecontrol = TextEditingController();
+  TextEditingController usernamecontrol = TextEditingController();
+  TextEditingController otangizniismicontrol = TextEditingController();
+  TextEditingController logincontrol = TextEditingController();
+  TextEditingController tugilgansanacontrol = TextEditingController();
+
+  int? selectId;
+
   void initState() {
+    selectId = 0;
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       Provider.of<RegionProvider>(context, listen: false).getdata();
     });
@@ -88,11 +97,13 @@ class _RegistraciyaState extends State<Registraciya> {
                         fontSize: 24.sp))),
             SizedBox(height: 32.h),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              width: 328.w,
+              height: 56.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: namecolor),
-                  borderRadius: BorderRadius.circular(6.r)),
+                  borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
                 onChanged: (e) {
                   if (e.length > 3) {
@@ -115,11 +126,13 @@ class _RegistraciyaState extends State<Registraciya> {
             ),
             SizedBox(height: 5.h),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              width: 328.w,
+              height: 56.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: usernamecolor),
-                  borderRadius: BorderRadius.circular(6.r)),
+                  borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
                 onChanged: (e) {
                   if (e.length > 3) {
@@ -142,11 +155,13 @@ class _RegistraciyaState extends State<Registraciya> {
             ),
             SizedBox(height: 5.h),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+             width: 328.w,
+              height: 56.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: otangizniismiColor),
-                  borderRadius: BorderRadius.circular(6)),
+                  borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
                 onChanged: (e) {},
                 controller: otangizniismicontrol,
@@ -165,11 +180,13 @@ class _RegistraciyaState extends State<Registraciya> {
               height: 4.h,
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+             width: 328.w,
+              height: 56.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: tugilgansanacolor),
-                  borderRadius: BorderRadius.circular(6)),
+                  borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
                 onChanged: (e) {
                   if (e.length > 3) {
@@ -275,11 +292,13 @@ class _RegistraciyaState extends State<Registraciya> {
               ],
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+             width: 328.w,
+              height: 56.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: Colors.grey),
-                  borderRadius: BorderRadius.circular(6.r)),
+                  borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
                 keyboardType: TextInputType.number,
                 cursorWidth: 1.w,
@@ -304,13 +323,9 @@ class _RegistraciyaState extends State<Registraciya> {
             SizedBox(
               height: 10.h,
             ),
-
-
-
-
             Container(
               height: 60.h,
-              margin: EdgeInsets.symmetric(horizontal: 15.w),
+              margin: EdgeInsets.symmetric(horizontal: 25.w),
               child: Card(
                 child: DropdownButtonFormField2<RegionModel>(
                   dropdownMaxHeight: 200.h,
@@ -319,9 +334,8 @@ class _RegistraciyaState extends State<Registraciya> {
                     child: Text(ViloyatTitle),
                   ),
                   icon: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 15.w),
                       child: Icon(Icons.arrow_drop_down)),
-                  buttonHeight: 60,
+                  buttonHeight: 60.h,
                   items: snapshot.data
                       .map((v) => DropdownMenuItem<RegionModel>(
                             value: v,
@@ -334,38 +348,36 @@ class _RegistraciyaState extends State<Registraciya> {
                           ))
                       .toList(),
                   onChanged: (_value) {
+                    print(_value!.id);
+                    selectId = _value.id;
                     ViloyatTitle = (_value.toString());
+                    setState(() {});
                   },
                 ),
               ),
             ),
-
-
-
-
             SizedBox(
               height: 4.h,
             ),
             Container(
               height: 60.h,
-              margin: EdgeInsets.symmetric(horizontal: 15.w),
+              margin: EdgeInsets.symmetric(horizontal: 25.w),
               child: Card(
-                child: DropdownButtonFormField2<RegionModel>(
+                child: DropdownButtonFormField2<String>(
                   dropdownMaxHeight: 200.h,
                   hint: Container(
                     padding: EdgeInsets.symmetric(horizontal: 15.w),
                     child: Container(child: Text(Tumantitle)),
                   ),
                   icon: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 15.w),
                       child: Icon(Icons.arrow_drop_down)),
                   buttonHeight: 60,
-                  items: snapshot.data
-                      .map((v) => DropdownMenuItem<RegionModel>(
+                  items: snapshot.data[selectId!].region!
+                      .map((v) => DropdownMenuItem<String>(
                             value: v,
                             child: Row(
                               children: [
-                                Container(child: Text(v.region![1])),
+                                Container(child: Text(v)),
                               ],
                             ),
                           ))
@@ -390,11 +402,13 @@ class _RegistraciyaState extends State<Registraciya> {
               height: 5.h,
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              width: 328.w,
+              height: 56.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: usertelcolor),
-                  borderRadius: BorderRadius.circular(6)),
+                  borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
                 onChanged: (e) {
                   if (e.length > 6) {
@@ -428,11 +442,13 @@ class _RegistraciyaState extends State<Registraciya> {
               height: 5.h,
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              width: 328.w,
+              height: 56.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: qoshimchatelcolor),
-                  borderRadius: BorderRadius.circular(6.r)),
+                  borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
                 onChanged: (e) {
                   if (e.length > 7) {

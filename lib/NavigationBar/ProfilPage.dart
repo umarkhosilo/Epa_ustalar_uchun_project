@@ -14,6 +14,7 @@ class _ProfilPageState extends State<ProfilPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 245, 241, 241),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 245, 241, 241),
         elevation: 0,
@@ -73,12 +74,11 @@ class _ProfilPageState extends State<ProfilPage> {
       body: SingleChildScrollView(
         child: Container(
           width: double.infinity,
-          color: Color.fromARGB(255, 245, 241, 241),
           alignment: Alignment.center,
           child: Column(
             children: [
               SizedBox(
-                height: 64.h,
+                height: 44.h,
               ),
               Container(
                 width: 328.w,
@@ -364,23 +364,21 @@ class _ProfilPageState extends State<ProfilPage> {
                                                   image: AssetImage(
                                                       "assets/images/Chiqish.png"))),
                                         ),
-                                        TextButton(
-                                          onPressed: () {
-                                            Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        StartPage2()));
-                                          },
-                                          child: Text("Chiqish",
-                                              style: TextStyle(
-                                                  decoration:
-                                                      TextDecoration.none,
-                                                  color: Color.fromRGBO(
-                                                      51, 51, 51, 1),
-                                                  fontSize: 14.sp,
-                                                  fontWeight: FontWeight.w900)),
-                                        ),
+                                        
+                                                 Container(
+                                                  child : ElevatedButton(onPressed: (){}, child: 
+                                                  Text("Chiqish",
+                                                      style: TextStyle(
+                                                          decoration:
+                                                              TextDecoration.none,
+                                                          color: Color.fromRGBO(
+                                                              51, 51, 51, 1),
+                                                          fontSize: 14.sp,
+                                                          fontWeight: FontWeight.w900)),) 
+                                                 ),
+                                             
+                                         
+                                       
                                       ],
                                     ),
                                   )

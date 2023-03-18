@@ -19,7 +19,7 @@ export 'package:eppa/Repasitory/katalog/epa_model.dart';
 export 'package:flutter/services.dart';
 export 'package:eppa/Repasitory/katalog/katalog_service.dart';
 export 'package:eppa/classlar/class.dart';
-export 'package:eppa/Registraciya.dart';
+export 'package:eppa/Repasitory/Registor/Registraciya.dart';
 export 'package:eppa/UserRaqamHa.dart';
 export 'package:eppa/UserRaqamYok.dart';
 export 'package:dropdown_button2/dropdown_button2.dart';

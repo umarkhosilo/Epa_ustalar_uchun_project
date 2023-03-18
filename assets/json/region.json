@@ -1,170 +1,170 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "title": "Toshkent",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "1Sergeliy",
+            "1Mirzo-Ulugbek",
+            "1Mirabod",
+            "1Bektemir",
+            "1Olmazor",
+            "1Yashnabod",
+            "1Yunusabod",
+            "1Uchtepa"
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Samarqand",
+        "region": [
+            "2Sergeliy",
+            "2Mirzo-Ulugbek",
+            "2Mirabod",
+            "2Bektemir",
+            "2Olmazor",
+            "2Yashnabod",
+            "2Yunusabod",
+            "2Uchtepa"
         ]
     },
     {
         "id": 2,
-        "title": "Samarqand",
+        "title": "Buhoro",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "3Sergeliy",
+            "3Mirzo-Ulugbek",
+            "3Mirabod",
+            "3Bektemir",
+            "3Olmazor",
+            "3Yashnabod",
+            "3Yunusabod",
+            "3Uchtepa"
         ]
     },
     {
         "id": 3,
-        "title": "Buhoro",
+        "title": "Fargona",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "4Sergeliy",
+            "4Mirzo-Ulugbek",
+            "4Mirabod",
+            "4Bektemir",
+            "4Olmazor",
+            "4Yashnabod",
+            "4Yunusabod",
+            "4Uchtepa"
         ]
     },
     {
         "id": 4,
-        "title": "Fargona",
+        "title": "Xorezm",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "5Sergeliy",
+            "5Mirzo-Ulugbek",
+            "5Mirabod",
+            "5Bektemir",
+            "5Olmazor",
+            "5Yashnabod",
+            "5Yunusabod",
+            "5Uchtepa"
         ]
     },
     {
         "id": 5,
-        "title": "Xorezm",
+        "title": "Sirdaryo",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "6Sergeliy",
+            "6Mirzo-Ulugbek",
+            "6Mirabod",
+            "6Bektemir",
+            "6Olmazor",
+            "6Yashnabod",
+            "6Yunusabod",
+            "6Uchtepa"
         ]
     },
     {
         "id": 6,
-        "title": "Sirdaryo",
+        "title": "Kashkadaryo",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "7Sergeliy",
+            "7Mirzo-Ulugbek",
+            "7Mirabod",
+            "7Bektemir",
+            "7Olmazor",
+            "7Yashnabod",
+            "7Yunusabod",
+            "7Uchtepa"
         ]
     },
     {
         "id": 7,
-        "title": "Kashkadaryo",
+        "title": "Surhandaryo",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "8Sergeliy",
+            "8Mirzo-Ulugbek",
+            "8Mirabod",
+            "8Bektemir",
+            "8Olmazor",
+            "8Yashnabod",
+            "8Yunusabod",
+            "8Uchtepa"
         ]
     },
     {
         "id": 8,
-        "title": "Surhandaryo",
+        "title": "Jizzah",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "9Sergeliy",
+            "9Mirzo-Ulugbek",
+            "9Mirabod",
+            "9Bektemir",
+            "9Olmazor",
+            "9Yashnabod",
+            "9Yunusabod",
+            "9Uchtepa"
         ]
     },
     {
         "id": 9,
-        "title": "Jizzah",
+        "title": "Margilon",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "10Sergeliy",
+            "10Mirzo-Ulugbek",
+            "10Mirabod",
+            "10Bektemir",
+            "10Olmazor",
+            "10Yashnabod",
+            "10Yunusabod",
+            "10Uchtepa"
         ]
     },
     {
         "id": 10,
-        "title": "Margilon",
+        "title": "Namangan",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "11Sergeliy",
+            "11Mirzo-Ulugbek",
+            "11Mirabod",
+            "11Bektemir",
+            "11Olmazor",
+            "11Yashnabod",
+            "11Yunusabod",
+            "11Uchtepa"
         ]
     },
     {
         "id": 11,
-        "title": "Namangan",
-        "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
-        ]
-    },
-    {
-        "id": 12,
         "title": "Navoi",
         "region": [
-            "Sergeliy",
-            "Mirzo-Ulugbek",
-            "Mirabod",
-            "Bektemir",
-            "Olmazor",
-            "Yashnabod",
-            "Yunusabod",
-            "Uchtepa"
+            "12Sergeliy",
+            "12Mirzo-Ulugbek",
+            "12Mirabod",
+            "12Bektemir",
+            "12Olmazor",
+            "12Yashnabod",
+            "12Yunusabod",
+            "12Uchtepa"
         ]
     }
     

@@ -1,9 +1,5 @@
-import 'package:eppa/NavigationBar/AmaliyotTarihi.dart';
-import 'package:eppa/Repasitory/katalog/Katalog.dart';
-import 'package:eppa/NavigationBar/ProfilPage.dart';
 import 'package:eppa/NavigationBar/XaridQoshish.dart';
 import 'package:eppa/libruaryclass.dart';
-import 'package:flutter/material.dart';
 
 class ButtonNavigationBar extends StatefulWidget {
   int index;
@@ -25,7 +21,7 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+    appBar: AppBar(
         title: Text(
           "Ortga",
           style: TextStyle(color: Color.fromARGB(255, 71, 68, 68)),
