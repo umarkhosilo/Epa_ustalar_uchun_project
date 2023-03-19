@@ -48,10 +48,12 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
             }
           });
         },
+        backgroundColor: Color.fromARGB(255, 240, 233, 233),
+      
         type: BottomNavigationBarType.fixed,
         currentIndex: widget.index,
         elevation: 10,
-        selectedFontSize: 30.sp,
+        selectedFontSize: 20.sp,
         iconSize: 30.sp,
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.grey,

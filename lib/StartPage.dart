@@ -39,13 +39,6 @@ class _StartPageState extends State<StartPage> with TickerProviderStateMixin {
 }
 
 
-
-
-
-
-
-
-
 //Animation Page
 class AnimationRouter extends PageRouteBuilder {
   final Widget page;

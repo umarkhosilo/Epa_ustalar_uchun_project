@@ -26,3 +26,4 @@ export 'package:dropdown_button2/dropdown_button2.dart';
 export 'package:eppa/Repasitory/Registor/regionService.dart';
 export 'package:eppa/Repasitory/Registor/regionModel.dart';
 export 'package:eppa/Repasitory/Registor/regionProvider.dart';
+export 'package:mask_text_input_formatter/mask_text_input_formatter.dart';

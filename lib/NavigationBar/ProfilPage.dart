@@ -28,14 +28,14 @@ class _ProfilPageState extends State<ProfilPage> {
             openProfil();
           },
           child: Container(
-            child: Row(
+            child: Column(
               children: [
                 Container(
                   child: Text(
                     usernames.name,
                     style: TextStyle(
                         color: Color.fromRGBO(130, 130, 130, 1),
-                        fontSize: 14.sp),
+                        fontSize: 12.sp),
                   ),
                 ),
                 SizedBox(
@@ -44,7 +44,7 @@ class _ProfilPageState extends State<ProfilPage> {
                 Text(
                   usernames.username,
                   style: TextStyle(
-                      color: Color.fromRGBO(130, 130, 130, 1), fontSize: 14.sp),
+                      color: Color.fromRGBO(130, 130, 130, 1), fontSize: 12.sp),
                 ),
               ],
             ),
@@ -59,11 +59,13 @@ class _ProfilPageState extends State<ProfilPage> {
               Text(
                 "ID 12345678",
                 style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w700),
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.w700,fontSize: 12.sp),
               ),
               Text(
                 usernames.userfoune,
+
                 style: TextStyle(
+                  fontSize: 12.sp,
                   color: Color.fromRGBO(130, 130, 130, 1),
                 ),
               )
@@ -221,23 +223,27 @@ class _ProfilPageState extends State<ProfilPage> {
               Container(
                   width: 328.w,
                   height: 58.h,
-                  decoration: BoxDecoration(
-                  ),
+                  decoration: BoxDecoration(),
                   child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                         side: BorderSide(
-                         width: 3.0.w,
-                        color: Colors.red,
-                         ),
-                         primary: Color.fromARGB(255, 245, 241, 241),
+                        side: BorderSide(
+                          width: 3.0.w,
+                          color: Colors.red,
                         ),
+                        primary: Color.fromARGB(255, 245, 241, 241),
+                      ),
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => BoglanishPage()));
                       },
-                      child: Text("Biz bilan bog’lanish",style: TextStyle(color: Color.fromRGBO(51,51,51,1),),))),
+                      child: Text(
+                        "Biz bilan bog’lanish",
+                        style: TextStyle(
+                          color: Color.fromRGBO(51, 51, 51, 1),
+                        ),
+                      ))),
               SizedBox(
                 height: 20.h,
               )
@@ -293,7 +299,7 @@ class _ProfilPageState extends State<ProfilPage> {
                                                       TextDecoration.none,
                                                   color: Color.fromRGBO(
                                                       130, 130, 130, 1),
-                                                  fontSize: 14.sp,
+                                                  fontSize: 12.sp,
                                                   fontWeight:
                                                       FontWeight.w900))),
                                       Container(
@@ -321,7 +327,7 @@ class _ProfilPageState extends State<ProfilPage> {
                                                 decoration: TextDecoration.none,
                                                 color: Color.fromRGBO(
                                                     130, 130, 130, 1),
-                                                fontSize: 14.sp,
+                                                fontSize: 12.sp,
                                                 fontWeight: FontWeight.w900)),
                                       ),
                                       Container(
@@ -334,7 +340,7 @@ class _ProfilPageState extends State<ProfilPage> {
                                                             TextDecoration.none,
                                                         color: Color.fromRGBO(
                                                             130, 130, 130, 1),
-                                                        fontSize: 14.sp,
+                                                        fontSize: 9.sp,
                                                         fontWeight:
                                                             FontWeight.w900))),
                                           ],
@@ -364,21 +370,24 @@ class _ProfilPageState extends State<ProfilPage> {
                                                   image: AssetImage(
                                                       "assets/images/Chiqish.png"))),
                                         ),
-                                        
-                                                 Container(
-                                                  child : ElevatedButton(onPressed: (){}, child: 
-                                                  Text("Chiqish",
-                                                      style: TextStyle(
-                                                          decoration:
-                                                              TextDecoration.none,
-                                                          color: Color.fromRGBO(
-                                                              51, 51, 51, 1),
-                                                          fontSize: 14.sp,
-                                                          fontWeight: FontWeight.w900)),) 
-                                                 ),
-                                             
-                                         
-                                       
+                                        Container(
+                                            child: TextButton(
+                                          onPressed: () {
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        StartPage2()));
+                                          },
+                                          child: Text("Chiqish",
+                                              style: TextStyle(
+                                                  decoration:
+                                                      TextDecoration.none,
+                                                  color: Color.fromRGBO(
+                                                      51, 51, 51, 1),
+                                                  fontSize: 14.sp,
+                                                  fontWeight: FontWeight.w900)),
+                                        )),
                                       ],
                                     ),
                                   )

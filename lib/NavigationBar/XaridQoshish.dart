@@ -22,11 +22,14 @@ class _XariQoshishPageState extends State<XariQoshishPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 20.w),
         color: Color.fromARGB(255, 240, 233, 233),
         alignment: Alignment.center,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 60.h,
+            ),
             Text("Yangi xarid",
                 style: TextStyle(fontSize: 25.sp, fontWeight: FontWeight.w800)),
             SizedBox(
@@ -68,7 +71,8 @@ class _XariQoshishPageState extends State<XariQoshishPage> {
                           borderSide:
                               BorderSide(color: Colors.green, width: 3.w)),
                       enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.grey, width: 2.w)),
+                          borderSide:
+                              BorderSide(color: Colors.grey, width: 2.w)),
                       border: InputBorder.none,
                     ),
                   ),

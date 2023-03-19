@@ -6,7 +6,6 @@ class KatalogService {
     final jsondata = await rootBundle.loadString("assets/json/epa.json");
     final listdata = await json.decode(jsondata) as List<dynamic>;
     List<dynamic> data = listdata.map((e) => KatalogModel.fromJson(e)).toList();
-    print("$data ++++");
     return data;
    }catch(e){
     return[];

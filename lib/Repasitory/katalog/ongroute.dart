@@ -10,9 +10,7 @@ KatalogModel data;
 }
 
 class _OngRoutePageState extends State<OngRoutePage> {
-  bool onpress = false;
-  String? values;
-  @override
+ @override
   Widget build(BuildContext context) {
           return Scaffold(
             backgroundColor: Color.fromARGB(255, 240, 233, 233),
@@ -65,21 +63,16 @@ class _OngRoutePageState extends State<OngRoutePage> {
                                           borderRadius:
                                               BorderRadius.circular(6)),
                                       child: ListTile(
-                                        leading: Column(
-                                          children: [
-                                            Container(
-                                              
-                                               decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                   image: DecorationImage(
-                                                      image: AssetImage(
-                                                           widget.data.products![index].img!)),
-                                                  borderRadius:
-                                                      BorderRadius.circular(6)),
-                                              width: 50.w,
-                                              height: 50.h,
-                                            ),
-                                          ],
+                                        leading: Container(
+                                          width: 66.w,
+                                          height: 66.h,
+                                           decoration: BoxDecoration(
+                                            color: Colors.white,
+                                               image: DecorationImage(
+                                                  image: AssetImage(
+                                                       widget.data.products![index].img!)),
+                                              borderRadius:
+                                                  BorderRadius.circular(6)),
                                         ),
                                         trailing: Container(
                                             height: 90.h,

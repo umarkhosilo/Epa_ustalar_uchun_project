@@ -50,7 +50,7 @@ class _UserRaqamHaPageState extends State<UserRaqamHaPage> {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(width: 1, color: Colors.grey)),
                   child: TextFormField(
-                    onChanged: (e){
+                      onChanged: (e){
                       _e = e;
                       if(_e.length > 2){
                          _color = Colors.red;
@@ -62,7 +62,7 @@ class _UserRaqamHaPageState extends State<UserRaqamHaPage> {
                         
                       });
                     },
-                    decoration: InputDecoration(border: InputBorder.none),
+                    decoration: InputDecoration(border: InputBorder.none,hintText: "SMS 777"),
                     controller: _sms,
                   )),
               SizedBox(

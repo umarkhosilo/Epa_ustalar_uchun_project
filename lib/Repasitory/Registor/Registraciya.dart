@@ -59,6 +59,21 @@ class _RegistraciyaState extends State<Registraciya> {
   TextEditingController tugilgansanacontrol = TextEditingController();
 
   int? selectId;
+  var maskFormatter3 = new MaskTextInputFormatter(
+      mask: '##_##_####',
+      filter: {"#": RegExp(r'[0-9]')},
+      type: MaskAutoCompletionType.lazy);
+
+
+  var maskFormatter = new MaskTextInputFormatter(
+      mask: '+998 (##) ###-##-##',
+      filter: {"#": RegExp(r'[0-9]')},
+      type: MaskAutoCompletionType.lazy);
+
+  var maskFormatter2 = new MaskTextInputFormatter(
+      mask: '+998 (##) ###-##-##',
+      filter: {"#": RegExp(r'[0-9]')},
+      type: MaskAutoCompletionType.lazy);
 
   void initState() {
     selectId = 0;
@@ -99,7 +114,7 @@ class _RegistraciyaState extends State<Registraciya> {
             Container(
               width: 328.w,
               height: 56.h,
-              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: namecolor),
@@ -128,7 +143,7 @@ class _RegistraciyaState extends State<Registraciya> {
             Container(
               width: 328.w,
               height: 56.h,
-              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: usernamecolor),
@@ -155,9 +170,9 @@ class _RegistraciyaState extends State<Registraciya> {
             ),
             SizedBox(height: 5.h),
             Container(
-             width: 328.w,
+              width: 328.w,
               height: 56.h,
-              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: otangizniismiColor),
@@ -180,14 +195,15 @@ class _RegistraciyaState extends State<Registraciya> {
               height: 4.h,
             ),
             Container(
-             width: 328.w,
+              width: 328.w,
               height: 56.h,
-              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: tugilgansanacolor),
                   borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
+                inputFormatters: [maskFormatter3],
                 onChanged: (e) {
                   if (e.length > 3) {
                     tugilgansanacolor = Colors.green;
@@ -292,9 +308,9 @@ class _RegistraciyaState extends State<Registraciya> {
               ],
             ),
             Container(
-             width: 328.w,
+              width: 328.w,
               height: 56.h,
-              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: Colors.grey),
@@ -333,8 +349,7 @@ class _RegistraciyaState extends State<Registraciya> {
                     padding: EdgeInsets.symmetric(horizontal: 15.w),
                     child: Text(ViloyatTitle),
                   ),
-                  icon: Container(
-                      child: Icon(Icons.arrow_drop_down)),
+                  icon: Container(child: Icon(Icons.arrow_drop_down)),
                   buttonHeight: 60.h,
                   items: snapshot.data
                       .map((v) => DropdownMenuItem<RegionModel>(
@@ -359,35 +374,35 @@ class _RegistraciyaState extends State<Registraciya> {
             SizedBox(
               height: 4.h,
             ),
-            Container(
-              height: 60.h,
-              margin: EdgeInsets.symmetric(horizontal: 25.w),
-              child: Card(
-                child: DropdownButtonFormField2<String>(
-                  dropdownMaxHeight: 200.h,
-                  hint: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 15.w),
-                    child: Container(child: Text(Tumantitle)),
-                  ),
-                  icon: Container(
-                      child: Icon(Icons.arrow_drop_down)),
-                  buttonHeight: 60,
-                  items: snapshot.data[selectId!].region!
-                      .map((v) => DropdownMenuItem<String>(
-                            value: v,
-                            child: Row(
-                              children: [
-                                Container(child: Text(v)),
-                              ],
-                            ),
-                          ))
-                      .toList(),
-                  onChanged: (_value) {
-                    Tumantitle = (_value.toString());
-                  },
-                ),
-              ),
-            ),
+            // ),
+            // Container(
+            //   height: 60.h,
+            //   margin: EdgeInsets.symmetric(horizontal: 25.w),
+            //   child: Card(
+            //     child: DropdownButtonFormField2<String>(
+            //       dropdownMaxHeight: 200.h,
+            //       hint: Container(
+            //         padding: EdgeInsets.symmetric(horizontal: 15.w),
+            //         child: Container(child: Text(Tumantitle)),
+            //       ),
+            //       icon: Container(child: Icon(Icons.arrow_drop_down)),
+            //       buttonHeight: 60,
+            //       items: snapshot.data[selectId!].region!
+            //           .map((v) => DropdownMenuItem<String>(
+            //                 value: v,
+            //                 child: Row(
+            //                   children: [
+            //                     Container(child: Text(v)),
+            //                   ],
+            //                 ),
+            //               ))
+            //           .toList(),
+            //       onChanged: (_value) {
+            //         Tumantitle = (_value.toString());
+            //       },
+            //     ),
+            //   ),
+            // ),
             SizedBox(
               height: 16.h,
             ),
@@ -404,14 +419,15 @@ class _RegistraciyaState extends State<Registraciya> {
             Container(
               width: 328.w,
               height: 56.h,
-              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: usertelcolor),
                   borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
+                inputFormatters: [maskFormatter],
                 onChanged: (e) {
-                  if (e.length > 6) {
+                  if (e.length > 2) {
                     usertelcolor = Colors.green;
                     usertelonclick = true;
                   } else {
@@ -444,12 +460,13 @@ class _RegistraciyaState extends State<Registraciya> {
             Container(
               width: 328.w,
               height: 56.h,
-              padding: EdgeInsets.symmetric(horizontal: 10.w,vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
               margin: EdgeInsets.symmetric(horizontal: 30.w),
               decoration: BoxDecoration(
                   border: Border.all(width: 1.w, color: qoshimchatelcolor),
                   borderRadius: BorderRadius.circular(10.r)),
               child: TextFormField(
+                inputFormatters: [maskFormatter2],
                 onChanged: (e) {
                   if (e.length > 7) {
                     qoshimchatelcolor = Colors.green;
@@ -480,6 +497,7 @@ class _RegistraciyaState extends State<Registraciya> {
                     usernames.berthday = tugilgansanacontrol.text;
                     usernames.userfoune = usertelcontrol.text;
                     setState(() {
+                      print(usernameOnclick);
                       if (nameOnclick &&
                           usernameOnclick &&
                           tugilgansanaOnclick &&
